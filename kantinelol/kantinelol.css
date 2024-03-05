@@ -44,6 +44,8 @@ nav ul li a:hover {
 }
 
 .content2 {
+    height: 60vh;
+  
     text-align: center;
     padding: 25px 0;
 }
