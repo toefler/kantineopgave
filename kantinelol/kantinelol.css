@@ -104,16 +104,31 @@ height: 100vh;
 .buy-now-btn:active {
     transform: translateY(2px); /* Add click effect */
 }
-
-.kontaktcontainter {
+.kontaktmother{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
+    gap: 35px;
+}
+.kontaktcontent{
+    width: 400px;
+}
+.kontaktcontainter {
+    display: flex;
+    justify-content: right;
     align-items: center;
     text-align: left;
 }
 
 .text2{
     padding: 10px 0 0 0 ;
+}
+input{
+    width: 500px;
+}
+textarea{
+    height: 200px;
+    width: 500px;
 }
 
 /* Responsive Styles */
@@ -161,6 +176,20 @@ height: 100vh;
     .content {
         padding-top: 100px;
         padding-bottom: 50px;
+    }
+    .kontaktmother{
+        margin-top: 50px;
+        gap: 15px;
+    }
+    .kontaktcontent{
+        width: 200px;
+    }
+    input{
+        width: 200px;
+    }
+    textarea{
+        height: 50px;
+        width: 200px;
     }
 }
 .johnson{
