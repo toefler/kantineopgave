@@ -1,0 +1,165 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .logo {
+        margin-left: 20px; /* Adjust margin for spacing */
+    }
+    
+    .logo img {
+        height: 50px; /* Adjust height as needed */
+    }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.content2 {
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.menu-toggle {
+    display: none;
+}
+
+.sitecontainer {
+background: red;
+height: 100vh;
+}
+
+.content {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.container {
+    text-align: center;
+    margin: 15px;
+    width: calc(25% - 30px); /* Adjust width to fit 4 containers per row */
+}
+
+.container img {
+    width: 100%;
+    height: auto; /* Reset height to maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+
+.buy-now-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #0056b3;
+}
+
+.buy-now-btn:active {
+    transform: translateY(2px); /* Add click effect */
+}
+
+.kontaktcontainter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.text2{
+    padding: 10px 0 0 0 ;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 999;
+        text-align: center;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+     display: flex;
+     justify-content: right;
+     padding-right: 25px;
+        cursor: pointer;
+ 
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .content {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
