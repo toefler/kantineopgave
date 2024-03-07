@@ -150,6 +150,23 @@ textarea{
     width: 500px;
 }
 
+.containerVejr{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #forecast {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
     nav {
