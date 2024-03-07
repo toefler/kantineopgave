@@ -23,3 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
   
+          // Array of image URLs
+          var images = [
+            "/kantinelol/vejr1.jpg",
+            "/kantinelol/vejr2.jpg",
+            "/kantinelol/vejr3.jpg",
+            "/kantinelol/vejr4.jpg"
+        ];
+
+        // Function to choose a random image from the array
+        function chooseRandomImage() {
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var randomImage = images[randomIndex];
+            return randomImage;
+        }
+
+        // Set the source of the image element to the randomly chosen image
+        var imgElement = document.getElementById("randomImage");
+        imgElement.src = chooseRandomImage();

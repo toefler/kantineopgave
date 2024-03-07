@@ -51,6 +51,15 @@ nav ul li a:hover {
    background-size: cover;
    background-position: center;
 }
+.downbtn{
+    display: flex;
+     justify-content: center;
+     padding-top: 250px;
+     font-size: 75px;
+     text-decoration: none;
+     color: #F6AC3F;
+     -webkit-text-stroke: 1px black;
+}
 .textph{
     padding: 150px;
 }
@@ -59,7 +68,18 @@ h1{
     text-transform: uppercase;
     -webkit-text-stroke: 1px black ;
 }
+.homepage2{
+    height: 90vh;
+}
 
+.vejrudsigt{
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: flex-start; /* Align items at the start */
+    flex-wrap: wrap;
+}
 footer {
     background-color: #00163b;
     color: #fff;
@@ -151,31 +171,111 @@ textarea{
 }
 
 .containerVejr{
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+    flex-grow: 1; /* Allow the container to grow */
   }
   
   h1 {
     text-align: center;
   }
   
+
   #forecast {
     text-align: center;
     font-size: 1.2em;
   }
+  
+  .billedevejr {
+    margin-left: 20px; /* Add space between the two elements */
+    padding-right: 200px;
+}
+  #randomImage {
+    width: 500px; /* Set the width */
+    height: 300px; /* Set the height */
+
+    top: 50%; /* Align the image vertically in the middle */
+ 
+
+}
 
 /* Responsive Styles */
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1160px) {
+    #randomImage {
+        width: 400px; /* Set the width */
+        height: 200px; /* Set the height */
+    
+        top: 50%; /* Align the image vertically in the middle */
+     
+    
+    }
+    .billedevejr {
+        margin-left: 20px; /* Add space between the two elements */
+        padding-right: 100px;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .container {
+        width: calc(33.33% - 30px); /* Adjust for 3 items per row */
+    }
+    .homepage2 {
+        height: 110vh;
+    }
+    #randomImage {
+        width: 300px; /* Set the width */
+        height: 200px; /* Set the height */
+    
+        top: 50%; /* Align the image vertically in the middle */
+     
+    
+    }
+    .billedevejr {
+        margin-left: 20px; /* Add space between the two elements */
+        padding-right: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 680px) {
+    .container {
+        width: calc(50% - 30px); /* Adjust for 2 items per row */
+    }
+    .homepage2 {
+        height: 150vh;
+    }
+    #randomImage {
+        width: 250px; /* Set the width */
+        height: 200px; /* Set the height */
+    
+        top: 50%; /* Align the image vertically in the middle */
+     
+    
+    }
+    .billedevejr {
+        margin-left: 20px; /* Add space between the two elements */
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .container {
+        width: calc(100% - 30px); /* Adjust for 1 item per row */
+    }
+    .homepage2 {
+        height: 350vh;
+    }
+    .billedevejr {
+        margin-left: 150px; /* Add space between the two elements */
+        padding-right: 100px;
+    }
+}
+@media only screen and (max-width: 820px) {
     nav {
         display: none;
         position: fixed;
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: #00163b;
         z-index: 999;
         text-align: center;
     }
