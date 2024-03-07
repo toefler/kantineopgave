@@ -113,9 +113,10 @@ height: 100vh;
 }
 
 .container img {
-    width: 100%;
-    height: auto; /* Reset height to maintain aspect ratio */
+    width: 150px;
+    height: 100px; /* Reset height to maintain aspect ratio */
     border-radius: 5px; /* Optional: Add rounded corners */
+
 }
 
 
@@ -218,7 +219,7 @@ textarea{
         width: calc(33.33% - 30px); /* Adjust for 3 items per row */
     }
     .homepage2 {
-        height: 110vh;
+        height: 120vh;
     }
     #randomImage {
         width: 300px; /* Set the width */
