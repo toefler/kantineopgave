@@ -118,12 +118,15 @@ height: 100vh;
 }
 .kontaktmother{
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
-    margin-top: 50px;
     gap: 35px;
-}
-.kontaktcontent{
-    width: 400px;
+    background-color:#00163b96;
+    max-width: 800px;
+    padding: 25px;
+    margin: auto;
+    margin-top: 50px;
+    color: rgb(189, 189, 189);
 }
 .kontaktcontainter {
     display: flex;
